@@ -146,12 +146,9 @@ class Dog
   end
 
   def self.create(att)
-    self.create_table
+   
      dog = Dog.new(att)
      dog.save
-     if dog.id == nil
-       dog.id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
-     end
      dog
   end
 
