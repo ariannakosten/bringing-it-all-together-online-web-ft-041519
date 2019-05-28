@@ -211,9 +211,7 @@ def self.find_by_name(name)
   end
 
   def update
-    if self.id == nil
-       self.save
-    else
+
      sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
      DB[:conn].execute(sql, self.name, self.breed, self.id)
    end
