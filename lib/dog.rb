@@ -97,7 +97,7 @@
 #         dog = self.create(name: name, breed: breed)
 #     end
 #   end
-  require 'pry'
+require 'pry'
 
 class Dog
 
