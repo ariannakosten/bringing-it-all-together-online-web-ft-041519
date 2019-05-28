@@ -159,6 +159,7 @@ class Dog
     sql = <<-SQL
       SELECT * FROM dogs
       WHERE dogs.id = ?
+      LIMIT 1
     SQL
 
     hash = {
