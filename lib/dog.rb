@@ -109,11 +109,6 @@ class Dog
     @id = hash[:id]
     @name = hash[:name]
     @breed = hash[:breed]
-    @@all << self
-  end
-
-  def self.all
-    @@all
   end
 
   def self.create_table
