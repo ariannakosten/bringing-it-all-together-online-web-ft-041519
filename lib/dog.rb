@@ -101,9 +101,8 @@ require 'pry'
 
 class Dog
 
-  @@all = []
-
-  attr_accessor :id, :name, :breed
+  attr_accessor :name, :breed
+  attr_reader :id
 
   def initialize(hash)
     @id = hash[:id]
