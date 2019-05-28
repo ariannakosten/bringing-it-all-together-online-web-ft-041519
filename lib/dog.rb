@@ -146,7 +146,6 @@ class Dog
   end
 
   def self.create(att)
-   
      dog = Dog.new(att)
      dog.save
      dog
