@@ -162,15 +162,9 @@ class Dog
       LIMIT 1
     SQL
 
-    hash = {
-      :id => id }
-
     DB[:conn].execute(sql, id).map do |row|
-      hash[:name] = row[1]
-      hash[:breed] = row[2]
-    end
-    found_dog = Dog.all.find {|dog| dog.id == id}
-    found_dog
+    
+   end
   end
 
    def self.find_or_create_by(name:, breed:)
