@@ -172,20 +172,20 @@ class Dog
     found_dog
   end
 
-  def self.find_or_create_by(name:, breed:)
+  # def self.find_or_create_by(name:, breed:)
 
-    dog = self.find_by_name(name)
+  #   dog = self.find_by_name(name)
 
-    if dog.breed != breed
-      hash = {
-          :name => name,
-          :breed => breed }
-      new_dog = self.create(hash)
-      new_dog
-    else
-      dog
-    end
-  end
+  #   if dog.breed != breed
+  #     hash = {
+  #         :name => name,
+  #         :breed => breed }
+  #     new_dog = self.create(hash)
+  #     new_dog
+  #   else
+  #     dog
+  #   end
+  # end
 
   def self.new_from_db(row)
       hash = {
